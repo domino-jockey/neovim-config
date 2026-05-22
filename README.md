@@ -6,7 +6,28 @@ A minimal, modern Neovim configuration built for Neovim 0.12+. Uses the built-in
 
 - Neovim 0.12 or later
 - Git
-- `pyright` and `lua-language-server` installed and available on your `$PATH` (or install via Mason after setup)
+- A [Nerd Font](https://www.nerdfonts.com/) set in your terminal (for icons)
+- Node.js (required by pyright)
+- ripgrep (required for live grep)
+
+### Installing dependencies
+
+**macOS (Homebrew):**
+```bash
+brew install neovim node ripgrep
+```
+
+**Linux (apt):**
+```bash
+sudo apt install neovim nodejs ripgrep
+```
+
+**Linux (pacman):**
+```bash
+sudo pacman -S neovim nodejs ripgrep
+```
+
+Language servers (`lua_ls` and `pyright`) can be installed inside Neovim via `:MasonInstall lua-language-server pyright` after setup.
 
 ## Installation
 
