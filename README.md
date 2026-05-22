@@ -1,12 +1,11 @@
 # neovim-config
 
-A minimal, modern Neovim configuration built for Neovim 0.12+. Uses the new built-in `vim.pack` package manager — no external bootstrapping required.
+A minimal, modern Neovim configuration built for Neovim 0.12+. Uses the built-in `vim.pack` package manager.
 
 ## Requirements
 
 - Neovim 0.12 or later
 - Git
-- A [Nerd Font](https://www.nerdfonts.com/) (for icons in lualine and mini.files)
 - `pyright` and `lua-language-server` installed and available on your `$PATH` (or install via Mason after setup)
 
 ## Installation
@@ -28,7 +27,7 @@ Open Neovim — plugins will be fetched automatically on first launch via `vim.p
 
 | Plugin | Purpose |
 |---|---|
-| [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Colorscheme (transparent) |
+| [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Colorscheme (transparent background) |
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | Statusline |
 | [mini.nvim](https://github.com/nvim-mini/mini.nvim) | File explorer, fuzzy picker, notifications, autopairs |
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | Indent guides, smooth scroll |
@@ -45,7 +44,7 @@ Configured language servers:
 - `lua_ls` — Lua (with `vim` global recognized)
 - `pyright` — Python
 
-Install servers via `:Mason` or manually. Enable additional servers in `lua/config/lsp.lua`.
+Install servers via `:MasonInstall` or manually. Enable additional servers in `lua/config/lsp.lua`.
 
 ## Keymaps
 
@@ -64,7 +63,7 @@ Leader key: `Space`
 | `<leader>fg` | Live grep |
 | `<leader>fh` | Search help docs |
 | `<leader>fk` | Search keymaps |
-| `J` / `K` (visual) | Move selected lines down / up |
+| `J` / `K` (visual) | Move selected lines up / down |
 
 ## Structure
 
