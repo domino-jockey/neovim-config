@@ -1,13 +1,12 @@
-require("mini.pairs").setup()
-require("mini.files").setup({
-	mappings = {
-		go_in = "<CR>",
-		go_in_plus = "L",
-		go_out = "-",
-		go_out_plus = "H",
+require("mini.files").setup()
+require("mini.pick").setup({
+	window = {
+		config = {
+			border = "rounded",
+			width  = math.floor(vim.o.columns * 0.60),
+			height = math.floor(vim.o.lines * 0.60),
+		},
 	},
 })
-
-require("mini.notify").setup()
-require("mini.pick").setup()
-require("mini.extra").setup()
+require("mini.notify").setup({})
+require("mini.pairs").setup({})

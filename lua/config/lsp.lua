@@ -9,7 +9,7 @@ vim.diagnostic.config({
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
-			diagnostics = { globals = { "vim" } },
+			diagnostics = { globals = { "vim", "Snacks", "MiniFiles" } },
 			workspace = {
                 library = { vim.env.VIMRUNTIME },
                 checkThirdParty = false,
@@ -17,11 +17,12 @@ vim.lsp.config("lua_ls", {
 		}
 	}
 })
+
 vim.lsp.config("pyright", {
-  handlers = {
-    -- Filter out noisy Pyright progress notifications
-    ['$/progress'] = function() end,
-  },
+	handlers = {
+		-- Filter out noisy Pyright progress notifications
+		['$/progress'] = function() end,
+	},
 })
 
 vim.lsp.enable({

@@ -19,11 +19,3 @@ opt.smartcase = true
 opt.laststatus = 3
 opt.splitbelow = true
 opt.splitright = true
--- Backup and undo options
-opt.swapfile = false
-opt.backup = false
-opt.undodir = vim.fn.stdpath("data") .. "/undodir"
-opt.undofile = true
--- Cmdline completions options
-opt.wildmode = "noselect:lastused,full"
-opt.wildoptions = "pum"

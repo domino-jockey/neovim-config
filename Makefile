@@ -12,3 +12,9 @@ install:
 
 clean:
 	rm -rf $(NVIM_CACHE)/* $(NVIM_CONFIG)/* $(NVIM_STATE)/* $(NVIM_DATA)/*
+
+pull:
+	rm -f init.lua
+	rm -rf lua
+	cp $(NVIM_CONFIG)/init.lua init.lua
+	cp -r $(NVIM_CONFIG)/lua ./lua
