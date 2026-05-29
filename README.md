@@ -39,7 +39,7 @@ Language servers (`lua_ls` and `pyright`) can be installed inside Neovim via `:M
 Clone the repo into your Neovim config directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME ~/.config/nvim
+git clone https://github.com/domino-jockey/neovim-config ~/.config/nvim
 ```
 
 Open Neovim — plugins will be fetched automatically on first launch via `vim.pack`.
